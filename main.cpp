@@ -32,14 +32,14 @@ void execute_redis_lpush(const char* image_name);
 // 测试redis set 操作
 void test_set();
 int main(){
-    //redisContext *context = connect_redis();
+    redisContext *context = connect_redis();
 //    if(context != NULL){
 //        test_redis(context);
 //    }
 //    redisReply *length = (redisReply *)redisCommand(context, "llen ysu_company_info");
 //    cout << length -> integer<<endl;
 //    cout << "hello" <<endl;
-//    test_redis_lrange(context);
+    test_redis_lrange(context);
 //    test_redis_lpush();
 //    execute_redis_lpush("cell_10");
 //    Mat image = imread("../11.jpg");
